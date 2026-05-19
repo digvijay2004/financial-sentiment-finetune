@@ -13,6 +13,23 @@ LoRA/PEFT for parameter-efficient training, achieving 85% accuracy on
 | Training Samples | 7,634 |
 | Eval Samples | 1,909 |
 
+```mermaid
+graph TD
+    A[Financial News Dataset 9543 samples] --> B[Data Preprocessing]
+    B --> C[Train Split 7634 samples]
+    B --> D[Eval Split 1909 samples]
+    C --> E[DistilBERT Base Uncased]
+    E --> F[LoRA Configuration r=16 alpha=32]
+    F --> G[Parameter Efficient Fine-tuning 1.3% trainable params]
+    G --> H[Training 3 Epochs]
+    H --> I[MLflow Experiment Tracking]
+    I --> J[Model Evaluation]
+    J --> K[Accuracy 85% F1 Score 0.85]
+    K --> L[Saved Model]
+    L --> M[Inference Pipeline]
+    M --> N[Sentiment Prediction Negative Neutral Positive]
+```
+
 ## Tech Stack
 
 - **Model**: DistilBERT (distilbert-base-uncased)
