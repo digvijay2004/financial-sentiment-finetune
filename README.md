@@ -54,3 +54,22 @@ graph TD
 4. Install: `pip install transformers datasets peft torch accelerate mlflow scikit-learn`
 5. Train: `python train.py`
 6. Test: `python inference.py`
+
+## How to Run Locally
+
+1. Clone the repo
+   git clone https://github.com/digvijay2004/financial-sentiment-finetune.git
+   cd financial-sentiment-finetune
+
+2. Create virtual environment
+   python -m venv venv
+   venv\Scripts\activate
+
+3. Install dependencies
+   pip install transformers datasets peft torch accelerate mlflow scikit-learn
+
+4. Train the model
+   python train.py
+
+5. Run inference
+   python inference.py
