@@ -1,0 +1,8 @@
+transformers
+datasets
+peft
+torch
+accelerate
+mlflow
+scikit-learn
+python-dotenv
