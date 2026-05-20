@@ -73,3 +73,9 @@ graph TD
 
 5. Run inference
    python inference.py
+
+   ## Try It Yourself
+Run inference on your own financial news:
+1. Follow setup instructions above
+2. Run python inference.py
+3. Modify the test_sentences list with your own headlines
